@@ -1,0 +1,14 @@
+# tell Travis need Docker
+sudo: required
+services:
+  - docker
+
+# build image with Dockerfile.dev
+before_install:
+  - docker build -t tmacnary/docker-react -f Dockerfile.dev .
+
+# tell Travis how to run the test suite
+
+
+# tell Travel how to deploy to AWS
+
